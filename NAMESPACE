@@ -1,0 +1,26 @@
+useDynLib("DatabionicSwarm", .registration = TRUE)
+importFrom(Rcpp, evalCpp)
+importFrom(RcppParallel, RcppParallelLibs)
+
+export(DBSclustering)
+export(Delaunay4Points)
+export(GeneratePswarmVisualization)
+export(ProjectedPoints2Grid)
+export(Pswarm)
+export(sESOM4BMUs)
+export(setGridSize)
+export(ShortestGraphPathsC)
+export(DijkstraSSSP)
+export(RelativeDifference)
+export(UniquePoints)
+
+
+
+import(Rcpp)
+
+importFrom("deldir","deldir")
+importFrom("stats", "hclust","cutree","as.dendrogram","dist", "quantile", "runif", "as.dist", "median", "order.dendrogram")
+importFrom("graphics", "axis", "box", "par", "plot.new", "points", "title", "plot")
+importFrom("utils", "tail","getSrcDirectory", "head", "packageVersion", "setTxtProgressBar", "txtProgressBar")
+importFrom("GeneralizedUmatrix","plotTopographicMap","TopviewTopographicMap")
+importFrom("grDevices", "contourLines")
